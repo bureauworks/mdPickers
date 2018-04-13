@@ -44,6 +44,7 @@ function ClockCtrl($scope) {
     this.$onInit = function () {
         self.STEP_DEG = 360 / 12;
         self.steps = [];
+        self.time = moment();
         self.CLOCK_TYPES = {
             "hours": { range: 12, },
             "minutes": { range: 60, }
